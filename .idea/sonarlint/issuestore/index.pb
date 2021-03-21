@@ -1,0 +1,15 @@
+
+J
+data_given/winequality.csv,2/8/2875e0102c35f24505164cd093a9ea513666afc8
+;
+template.py,1/7/17a208ce8441b8a355940608913934e39ada5b34
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+;
+params.yaml,7/7/7782396f5a23790a65703092f8c0bccc36a622df
+8
+dvc.yaml,3/6/364eaf473ca11e4254fdc54731687f2f60db69b7
+@
+requirements.txt,1/9/19359a61ae2446b51b549167b014da2fcf265768
+?
+src/get_data.py,3/0/30909f782d672df3443ffd3809d14c2080f450da
