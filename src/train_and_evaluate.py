@@ -66,6 +66,7 @@ def train_and_evaluate(config_path):
     scores_file = config["reports"]["scores"]
     params_file = config["reports"]["params"]
 
+    # Save the scores in scores.json
     with open(scores_file, "w") as f:
         scores = {
             "rmse": rmse,
@@ -74,6 +75,7 @@ def train_and_evaluate(config_path):
         }
         json.dump(scores, f, indent=4)
 
+    #Save the evaluation metrics in params.json
     with open(params_file, "w") as f:
         params = {
             "alpha": alpha,

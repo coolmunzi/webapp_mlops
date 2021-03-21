@@ -7,7 +7,7 @@ dirs = [
     "notebooks",
     "saved_models",
     "src",
-    "report""
+    "report"
 ]
 
 for dir in dirs:
