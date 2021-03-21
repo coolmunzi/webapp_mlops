@@ -98,3 +98,5 @@ To build wheel file for src package (Do this if you really need wheel file)
 ```bash
 python setup.py sdist bdist_wheel
 ```
+
+For CI-CD workflow, add/update ci-cd.yaml file under .github/workflows which manages github actions

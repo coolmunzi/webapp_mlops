@@ -33,7 +33,8 @@ files = [
     os.path.join("webapp", "static", "css", "index.js"),
     os.path.join("webapp", "templates","index.html"),
     os.path.join("webapp", "templates","404.html"),
-    os.path.join("webapp", "templates","base.html")
+    os.path.join("webapp", "templates","base.html"),
+    os.path.join(".github", "workflows","ci-cd.yaml")
 
 ]
 
