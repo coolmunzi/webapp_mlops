@@ -100,3 +100,6 @@ python setup.py sdist bdist_wheel
 ```
 
 For CI-CD workflow, add/update ci-cd.yaml file under .github/workflows which manages github actions
+
+Create a new webapp in Heroku and connect it with your github. Choose Automatic Deploy in Heroku and enable _"Wait for CI to pass before deploy"_. 
+Create HEROKU_APP_NAME & HEROKU_API_TOKEN secrets in the github. (NOTE: generate heroku api tokens from applications -> create authorization -> define api token)
