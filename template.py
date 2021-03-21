@@ -6,7 +6,8 @@ dirs = [
     "data_given",
     "notebooks",
     "saved_models",
-    "src"
+    "src",
+    "report""
 ]
 
 for dir in dirs:
