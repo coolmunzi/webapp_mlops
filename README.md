@@ -67,7 +67,13 @@ If you change the hyper parameters and later on would like to compare the hyper-
 ```bash
 dvc metrics diff
 ```
-tox command -
+
+Add/update testing files: __init__.py, conftest.py, schema_in.json and test_config.py inside tests directory
+NOTE: Testing can be done using pytest (via pytest -v) or using tox.
+
+To run tests using tox, add/update tox.ini file.
+
+tox command to run tests:
 ```bash
 tox
 ```
@@ -75,17 +81,12 @@ for rebuilding -
 ```bash
 tox -r 
 ```
-pytest command
+Create setup.py to make package from src. After adding/updating setup.py, execute following command to create src package.
 ```bash
-pytest -v
+pip install -e .
 ```
 
-setup commands -
-```bash
-pip install -e . 
-```
-
-build your own package commands- 
+To build wheel file for src package (Do this if you really need wheel file) 
 ```bash
 python setup.py sdist bdist_wheel
 ```
