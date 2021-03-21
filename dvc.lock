@@ -17,3 +17,12 @@ stages:
       md5: d98e8f2eca228c11c4de1cc96866a54d
       size: 91998
       isexec: true
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - path: data/raw/winequality.csv
+      md5: d98e8f2eca228c11c4de1cc96866a54d
+      size: 91998
+    - path: src/split_data.py
+      md5: 8881a53274233ba11ae6755037592ea1
+      size: 844
