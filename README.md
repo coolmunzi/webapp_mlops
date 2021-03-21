@@ -71,13 +71,21 @@ dvc metrics diff
 Add/update testing files: __init__.py, conftest.py, schema_in.json and test_config.py inside tests directory
 NOTE: Testing can be done using pytest (via pytest -v) or using tox.
 
+Create schema_in.json indicating min and max values for all the columns using following command:
+```bash 
+import pandas as pd
+df = pd.read_csv('data_given/winequality.csv')
+overview = df.describe()
+overview.loc[ ["min", "max"] ].to_json("schema_in.json")
+```
+
 To run tests using tox, add/update tox.ini file.
 
 tox command to run tests:
 ```bash
 tox
 ```
-for rebuilding -
+For rebuilding the testing environment when there is change in requirements -
 ```bash
 tox -r 
 ```

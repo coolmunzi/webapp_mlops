@@ -8,7 +8,12 @@ dirs = [
     "saved_models",
     "src",
     "report",
-    "tests"
+    "tests",
+    os.path.join("prediction_service", "model"),
+    os.path.join("webapp", "static", "css"),
+    os.path.join("webapp", "static", "script"),
+    os.path.join("webapp", "templates")
+
 ]
 
 for dir in dirs:
@@ -21,7 +26,15 @@ files = [
     "dvc.yaml",
     "params.yaml",
     ".gitignore",
-    os.path.join("src","__init__.py")
+    "app.py",
+    os.path.join("src","__init__.py"),
+    os.path.join("prediction_service", "prediction.py"),
+    os.path.join("webapp", "static", "css", "main.css"),
+    os.path.join("webapp", "static", "css", "index.js"),
+    os.path.join("webapp", "templates","index.html"),
+    os.path.join("webapp", "templates","404.html"),
+    os.path.join("webapp", "templates","base.html")
+
 ]
 
 for file in files:
