@@ -9,6 +9,7 @@ dirs = [
     "src",
     "report",
     "tests",
+    "artifacts",
     os.path.join("prediction_service", "model"),
     os.path.join("webapp", "static", "css"),
     os.path.join("webapp", "static", "script"),
@@ -34,7 +35,8 @@ files = [
     os.path.join("webapp", "templates","index.html"),
     os.path.join("webapp", "templates","404.html"),
     os.path.join("webapp", "templates","base.html"),
-    os.path.join(".github", "workflows","ci-cd.yaml")
+    os.path.join(".github", "workflows","ci-cd.yaml"),
+    os.path.join("src", "log_production_model.py")
 
 ]
 

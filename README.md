@@ -78,6 +78,10 @@ df = pd.read_csv('data_given/winequality.csv')
 overview = df.describe()
 overview.loc[ ["min", "max"] ].to_json("schema_in.json")
 ```
+To run mlflow server 
+```bash
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 -p 1234
+```
 
 To run tests using tox, add/update tox.ini file.
 
@@ -108,3 +112,5 @@ This app is deployed on https://wine-quality-analysis.herokuapp.com/ with CI-CD 
 
 Following image depicts how the deployed app looks like.
 ![alt text](Demo.jpg)
+
+
